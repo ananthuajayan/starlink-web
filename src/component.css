@@ -1,0 +1,462 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  .fa-bars{
+    position: absolute;
+    right: 10px;
+    top: 95px;
+    display: none;
+
+  }
+ 
+img{
+    width: 100%;
+    height: 100%;
+}
+#mailbox{
+    width: 35px;
+    height: 25px;
+}
+.contact-navbar{
+    background-color: #0C2239;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+.contacts{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.contacts h6{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+}
+.fa-facebook,.fa-instagram{
+    font-size: 30px;
+    color: #FF4800;
+    margin-left: 10px;
+}
+/* navbar starts here */
+.main-icon{
+    width: 244px;
+    height: 42px;
+}
+.head-section{
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.head-section ul{
+    display: flex;
+    gap: 30px;
+}
+.head-section ul li{
+list-style-type: none;   
+}
+.head-section ul li a{
+font-weight: 700;
+font-size: 16px; 
+color: #2F3567;
+text-decoration: none;
+}
+.head-section ul li {
+    font-weight: 700;
+    font-size: 16px; 
+    color: #2F3567;
+    text-decoration: none;
+    }
+    .product-li{
+        position: relative;
+    }
+    #sub-list{
+        display: flex;
+        visibility: hidden;
+        gap: 10px;
+        flex-direction: column;
+        width: 300px;
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        padding: 10px;
+        border-radius: 4px;
+        text-align: left;
+        z-index: 1000;
+        background-color: rgb(197, 226, 245);
+    }
+    #sub-list li a:hover{
+        color: #FF4800;
+       
+    }
+      
+      .product-li:hover #sub-list {
+        visibility: visible;
+      }
+      
+.enquire-button button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #FF4800;
+    border: none;
+    outline: none;
+    color: white;
+    width: 181px;
+    height: 41px;
+    font-weight: 600;
+    font-size: 16px;
+    margin-right: 20px;
+}
+button:hover{
+    background-color: #b03505;
+}
+.head-section ul li.active {
+    text-decoration: underline;
+  }
+  /* carousel starts here */
+   .carousel-item{
+    position: relative;
+   }
+   .carousel-caption{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+   }
+ 
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(18, 31, 50, 0.6);
+  }
+  .carousel-caption h2, .carousel-caption p {
+    color: white;
+   }
+  /* carousel Ends here */
+  
+  .container-lg{
+    display:flex;
+    justify-content: center;
+    gap: 20px;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 90px;
+  }
+  .wrapper-card{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F8F8;
+    margin-top: -70px;
+    z-index: 1000;
+    height: 300px;
+  }
+  .wrapper-card p{
+    width: 191px;
+    height: 53px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #2F3567;
+    text-align: center;
+  }
+  .wrapper-image{
+    margin-bottom: 10px;
+  }
+  .wrapper-card h5{
+    font-weight: 700;
+    font-size: 16px;
+    color: #2F3567;
+  }
+
+  /* block three starts here */
+   .home-about{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    gap: 50px;
+    margin-bottom: 90px;
+   }
+   .home-about-image{
+    width: 50%;
+    height: 480px;
+   }
+   .home-about-image img{
+    object-fit: cover;
+   }
+  /* block three ends here */
+.home-about-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+}
+#line{
+    height: 4px;
+    width: 69px;
+    background-color: #FF4800;
+    border-radius: 5px;
+}
+.line{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.line h5{
+    font-weight: 700;
+    font-size: 24px;
+    color: #FF4800;
+}
+.home-about-details h2{
+    font-weight: 700;
+    color: #0C2239;
+}
+.home-about-details p{
+    font-weight: 500;
+    font-size: 16px;
+    color: #2F3567;
+}
+.service-dots{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.dot-details{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.dot{
+    width: 26px;
+    height: 26px;
+}
+.details{
+    font-weight: 700;
+    font-size: 18px;
+    color: #2F3567;
+}
+.about-us-btn button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #FF4800;
+    border: none;
+    outline: none;
+    color: white;
+    width: 181px;
+    height: 41px;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 20px 0;
+}
+.container-fluid {
+    position: relative;
+    margin-bottom: 90px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 250px;
+}
+.container-fluid img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.company-promo{
+    position: relative;
+}
+.company-promo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.company-promo h2{
+    font-weight: 700;
+    font-size: 45px;
+}
+.company-promo h6{
+    font-weight: 700;
+
+}
+
+/* --------- */
+.container-image{
+    width: 60%;
+    height: 495px;
+}
+.container-image img{
+    border-radius: 50% 5px 100px 20px;
+    object-fit: cover;
+}
+.container{
+    margin-bottom: 90px;
+    display: flex; 
+    gap: 50px;
+}
+
+.accordion {
+    width: 100% !important;
+}
+.accordion-item{
+    border: unset !important;
+    border-bottom: 1px solid lightgray !important;
+}
+
+/* --------- */
+.best-deal{
+    background-color: #FF4800;
+    margin-bottom: 90px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.line-deal{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+#white-line{
+    width: 82px;
+    height: 2px;
+    background-color: white;
+}
+.line-deal h6{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+.best-deal h2{
+    font-weight: 700;
+    font-size: 40px;
+    color: white;
+}
+/* --------- */
+.container-section-details button{ 
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #FF4800;
+        border: none;
+        outline: none;
+        color: white;
+        width: 181px;
+        height: 41px;
+        font-weight: 600;
+        font-size: 16px;
+}
+.container-sec{
+    display: flex;
+    gap: 30px;
+}
+.container-section-images{
+    width: 50%;
+}
+.container-section-images img{
+    border-radius: 10px;
+}
+.container-section-details{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.container-sec.even-index {
+    flex-direction: row-reverse;
+  }
+  .zero{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  /* footer starts here */
+  .footer{
+    background-color: #0C2239;
+    padding: 20px;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: 0.6fr 1fr 1fr 1fr;
+    /* gap: 10px; */
+    padding: 0px 30px;
+}
+.footer-details{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer-details h5{
+    color: white;
+    font-weight: 400;
+}
+.footer-details h6{
+    color: white;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.fa-sharp,.fa-solid{
+    color: aliceblue;
+}
+.adress{
+    display: flex;
+    gap: 10px;
+}
+.adress img{
+    width: 50px;
+    height: 50px;
+}
+.social-medias{
+    display: flex;
+    gap: 15px;
+}
+
+.social-medias img{
+    width: 70px;
+    height: 50px;
+    transition: transform 0.3s ease-in-out; /* Smooth transition effect on hover */
+
+}
+.social-medias img:hover{
+    transform: scale(1.2);
+}
+.footer-info h6:hover{
+    color: orangered;
+}
+
+#map{
+    height: 200px;
+}
+.adress a{
+    color: white;
+    text-decoration: none;
+}
+.adress a:hover{
+    color: #FF4800;
+}
+.footer-info a{
+    text-decoration: none;
+}
+
+  /* footer ends here */
+  

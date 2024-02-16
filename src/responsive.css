@@ -1,0 +1,27 @@
+@media(max-width:1159px){
+    .home-about{
+        width: 100%;
+        padding: 20px;
+       }
+}
+@media(max-width:1000px){
+   .container-lg{
+    flex-wrap: wrap;
+   } 
+   .wrapper-card{
+    margin-top: 20px;
+   }
+   .container{
+    max-width: 900px !important;
+   }
+  
+}
+@media(max-width:900px){
+   .head-section ul{
+    display: none;
+   }
+   .fa-bars{
+    display: block;
+   }
+   
+ }
