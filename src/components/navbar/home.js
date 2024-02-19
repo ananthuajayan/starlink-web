@@ -138,7 +138,10 @@ const Home = () => {
           </div>
 
           <div className='about-us-btn'>
+            <Link to="/about-us">
             <button>More</button>
+
+            </Link>
           </div>
 
         </div>
@@ -169,7 +172,7 @@ const Home = () => {
         <div className="container-image">
           <img src={containerHOuse} alt="" />
         </div>
-        <div className='home-about-details'>
+        <div className='home-about-details' id='contents'>
           <div className='line'>
             <div id='line'></div>
             <h5>Featured</h5>

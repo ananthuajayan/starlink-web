@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import mainicon from '../components/images/Rectangle 2 (1).png';
 
 const Navbar = () => {
   const location = useLocation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleToggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <>
-      <div className='head-section '>
+      <div className={`head-section ${isMenuOpen ? 'menu-open' : ''}`}>
         <div className='main-icon'>
           <div className={location.pathname === '/' ? 'active' : ''}>
             <Link to='/'>
@@ -16,41 +21,43 @@ const Navbar = () => {
           </div>
         </div>
 
-        <ul>
+        <ul className={`main-nav-list ${isMenuOpen ? 'menu-open' : ''}`}>
           <li className={location.pathname === '/' ? 'active' : ''}>
-            <Link to='/'>Home</Link>
+            <Link to='/' onClick={handleToggleMenu}>Home</Link>
           </li>
           <li className={location.pathname === '/about-us' ? 'active' : ''}>
-            <Link to='/about-us'>About Us</Link>
+            <Link to='/about-us' onClick={handleToggleMenu}>About Us</Link>
           </li>
-          <li className='product-li'>
+          <li className={`product-li ${isMenuOpen ? 'menu-open' : ''}`}>
             Product
+            <i className="fas fa-caret-down"></i> 
             <ul id='sub-list'>
               <li>
-                <Link to='/products/motor'>Motor Homes</Link>
+                <Link to='/products/motor' onClick={handleToggleMenu}>Motor Homes</Link>
               </li>
               <li>
-                <Link to='/products/office'>Container Offices</Link>
+                <Link to='/products/office' onClick={handleToggleMenu}>Container Offices</Link>
               </li>
               <li>
-                <Link to='/products/caravans'>Caravans</Link>
+                <Link to='/products/caravans' onClick={handleToggleMenu}>Caravans</Link>
               </li>
               <li>
-                <Link to='/products/containers'>Containers</Link>
+                <Link to='/products/containers' onClick={handleToggleMenu}>Containers</Link>
               </li>
-              
             </ul>
           </li>
           <li className={location.pathname === '/contact' ? 'active' : ''}>
-            <Link to='/contact'>Contact Us</Link>
+            <Link to='/contact' onClick={handleToggleMenu}>Contact Us</Link>
           </li>
         </ul>
 
         <div className='enquire-button'>
-          <button>Enquire now</button>
+          <button onClick={handleToggleMenu}>Enquire now</button>
         </div>
-        <i className="fas fa-bars"></i>
 
+        <div className='menu-toggle' onClick={handleToggleMenu}>
+          <i className={`fas ${isMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
+        </div>
       </div>
     </>
   );

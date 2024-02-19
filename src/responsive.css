@@ -17,11 +17,135 @@
   
 }
 @media(max-width:900px){
-   .head-section ul{
-    display: none;
-   }
    .fa-bars{
-    display: block;
+      display: block;
+   }
+   .main-nav-list li a{
+      color: white;
+   }
+   .main-nav-list {
+      list-style: none;
+      display: flex;
+      gap: 90px;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 50%;
+      height: 100vh;
+      background-color: #191d47;
+      transition: left 0.8s ease;
+      padding-top: 90px; /* Add transition for smooth animation */
+    }
+    
+    .main-nav-list.menu-open {
+      left: 0;
+    }
+    .nav-list li a,.main-nav-list li{
+      color: white;
+   }
+   #sub-list{
+      width: 200px;
+      background-color: blue;
+   }
+   #sub-list li{
+      color: white;
+   }
+ .footer-container{
+   grid-template-columns: 1fr 1fr;
+   row-gap: 30px;
+ }
+  
+ }
+ @media(max-width:800px){
+    .container-image{
+      display: none;
+   }
+   .contact-image{
+      display: none;
+   }
+   #contents{
+      width: 100%;
+   }
+   .container-sec{
+      flex-direction: column;
+      align-items: center;
+   }
+   .container-sec.even-index {
+      flex-direction: column;
+   }
+   .container-section-images,.container-section-details{
+      width: 90%;
+   }
+   .contact-navbar{
+      display: none;
+   }
+   .sets-us-apart{
+      display: none;
+   }
+   .best-deal h2{
+      font-size: 25px;
+   }
+
+}
+@media(max-width:638px){
+   .home-about-image{
+      display: none;
+   }
+   .home-about-details{
+      width: 100%;
+   }
+   .carousel-caption {
+      top: 10px;
+   }
+}
+@media(max-width:568px){
+   .footer-container{
+      grid-template-columns: 1fr;
+   }
+   .container-fluid{
+      grid-template-columns: 1fr;
+      height: auto;
+      gap: 50px;
+   }
+   .carousel-caption p{
+      display: none;
+   }
+   .enquire-button button{
+      width: unset;
+   }
+   .main-nav-list{
+      width: 100%;
+   }
+   .best-deal h2{
+      font-size: 25px;
+   }
+   .line-deal h6,.line h5{
+      font-size: 18px;
+   }
+   .main-icon{
+      width: 200px;
+   }
+  .row{
+   flex-direction: column !important;
+   gap: 20px;
+  }
+}
+@media(max-width:395px){
+   .main-icon{
+      width: 170px;
+   }
+   .head-section{
+      padding: 30px 10px;
+   }
+   .footer-container{
+      padding: unset;
+   }
+   .best-deal h2{
+      font-size: 18px;
+   }
+   .testimonial-card{
+      height: 380px;
    }
    
- }
+}
