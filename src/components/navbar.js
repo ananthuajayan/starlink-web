@@ -1,17 +1,27 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import mainicon from '../components/images/Rectangle 2 (1).png';
+import Mymodal from '../components/navbar/modal';
 
 const Navbar = () => {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   const handleToggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleButtonClick = () => {
+    handleToggleMenu();
+    handleShow();
+  };
   return (
     <>
+    <Mymodal show={show} setShoe={setShow} handleClose={handleClose}/>
       <div className={`head-section ${isMenuOpen ? 'menu-open' : ''}`}>
         <div className='main-icon'>
           <div className={location.pathname === '/' ? 'active' : ''}>
@@ -52,7 +62,7 @@ const Navbar = () => {
         </ul>
 
         <div className='enquire-button'>
-          <button onClick={handleToggleMenu}>Enquire now</button>
+          <button onClick={handleButtonClick}>Enquire now</button>
         </div>
 
         <div className='menu-toggle' onClick={handleToggleMenu}>

@@ -1,7 +1,10 @@
-@media(max-width:1159px){
+@media(max-width:1160px){
     .home-about{
         width: 100%;
         padding: 20px;
+       }
+       .containers{
+         grid-template-columns: 1fr 1fr;
        }
 }
 @media(max-width:1000px){
@@ -98,6 +101,12 @@
    .carousel-caption {
       top: 10px;
    }
+   #para-1{
+      display: none;
+   }
+   .containers{
+      grid-template-columns: 1fr;
+   }
 }
 @media(max-width:568px){
    .footer-container{
@@ -146,6 +155,9 @@
    }
    .testimonial-card{
       height: 380px;
+   }
+   .product-card{
+      padding: 10px;
    }
    
 }

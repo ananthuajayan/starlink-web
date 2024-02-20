@@ -647,6 +647,14 @@ button:hover{
     padding: 20px;
     border-radius: 10px;
   }
+  select{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #2F3567;
+    padding: 10px;
+  }
   /* contact-us ends here */
   /* products */
    .page-start{
@@ -671,20 +679,16 @@ button:hover{
     left: 0px;
     top: 0px;
    }
-   .motor-image{
-    width: 50%;
-    z-index: 1000;
-   }
-   .motor-image img{
-    border-radius: 20%;
-   }
+  
    .motor-details{
-    width: 50%;
     display: flex;
     flex-direction: column;
-    /* gap: 10px; */
     z-index: 1000;
     color: white;
+   }
+   .motor-details h1{
+    color: #FF4800;
+    border-bottom: 1px solid #FF4800;
    }
    .containers{
     display: grid;
@@ -692,18 +696,18 @@ button:hover{
     gap: 30px;
    }
    .card-image{
-    height: 230px;
+    max-height: 250px;
    }
    .card-image img{
     object-fit: cover;
    }
    .product-card{
-    padding: 20px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    height: 600px;
-    box-shadow: 0px 4px 20.700000762939453px 0px #00000017;
+    height: 630px;
+    box-shadow: 20px 40px 80.700000762939453px 10px #940f0f17;
 
    }
    .product-description{
@@ -736,3 +740,7 @@ button:hover{
     font-size: 16px;
    }
   /* products ends here*/
+ .enquire-col{
+    margin-bottom: 20px;
+ }
+ 
