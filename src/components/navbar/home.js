@@ -62,28 +62,34 @@ const Home = () => {
             <img src={Size} alt="" />
           </div>
           <h5>Container Size</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
+          <p>
+          Whether you're planning a small home renovation or a large-scale construction project, we've got the perfect container size to fit your needs.
+          </p>
         </div>
         <div className='wrapper-card'>
           <div className='wrapper-image'>
             <img src={Type} alt="" />
           </div>
           <h5>Container Type</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
+          <p>
+          Let us help you select the right container type, ensuring your project's success while adhering to environmental guidelines.
+          </p>
         </div>
         <div className='wrapper-card'>
           <div className='wrapper-image'>
             <img src={Payment} alt="" />
           </div>
           <h5>Payment</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
+          <p>
+          We believe in making our services accessible and stress-free, which is why we offer a variety of payment options to suit your needs.          </p>
         </div>
         <div className='wrapper-card'>
           <div className='wrapper-image'>
             <img src={Security} alt="" />
           </div>
           <h5>Safety</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
+          <p>
+          Safety is at the core of everything we do. We're committed to ensuring the well-being of our clients, employees, and the environment b          </p>
         </div>
 
 

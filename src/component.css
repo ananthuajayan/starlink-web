@@ -5,6 +5,23 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
   }
+.col span{
+    margin-top: -10px;
+    color: red;
+    /* display: none; */
+}
+.custom-alert{
+    padding: 50px;
+    background-color: #FF4800;
+    position: fixed;
+    top:50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9000;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+}
 
   
 
@@ -179,11 +196,11 @@ button:hover{
     margin-bottom: 90px;
   }
   .wrapper-card{
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     border-radius: 5px;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     background-color: #F8F8F8;
     margin-top: -70px;
@@ -200,6 +217,8 @@ button:hover{
   }
   .wrapper-image{
     margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
   }
   .wrapper-card h5{
     font-weight: 700;

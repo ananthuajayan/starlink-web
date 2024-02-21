@@ -68,6 +68,10 @@ const contact = () => {
               <textarea name="" id="" cols="20" rows="5"></textarea>
             </div>
           </div>
+          <div className="enquire-button">
+            <button>Send</button>
+          </div>
+
         </form>
       </div>
     </>

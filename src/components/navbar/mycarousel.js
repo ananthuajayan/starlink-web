@@ -15,10 +15,8 @@ function DarkVariantExample() {
         <Carousel.Caption className='carousel-caption'>
           <h2><b>BEST CONTAINER SELLERS</b> </h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Phasellus
-            faucibus scelerisque eleifend donec pretium. In ante metus dictum
-            at. Lacus sed turpis tincidunt id
+          Whether you're planning a small home renovation or a large-scale construction project, we've got the perfect container size to fit your needs. Our range of container  accommodate your specific project requirements, ensuring you get the most efficient and cost-effective solution.
+
           </p>
         </Carousel.Caption>
       </Carousel.Item>
